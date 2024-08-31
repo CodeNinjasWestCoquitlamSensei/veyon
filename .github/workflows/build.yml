@@ -7,7 +7,7 @@ jobs:
         dist:
           - windows
     runs-on: ubuntu-latest
-    container: veyon/ci.linux.${{matrix.dist}}
+    container: veyon/ci.${{matrix.dist}}
     steps:
       - uses: actions/checkout@v4
         with:
